@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "237cfd86-b6ef-40e5-8586-51ddc0149e1d",
+		"name": "Medium",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ms-Registry",
+			"item": [
+				{
+					"name": "De-register",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9070/ngati/services/de-register/nameCheck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9070",
+							"path": [
+								"ngati",
+								"services",
+								"de-register",
+								"nameCheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"service_name\": \"customerDetails\",\r\n    \"service_ip\": \"localhost\",\r\n    \"service_port\": \"9070\",\r\n    \"service_dc\": \"Tukuyu03\",\r\n    \"health_check_path\": \"/health\",\r\n    \"http_scheme\": \"http\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9070/ngati/services/register/customerDetails\n",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9070",
+							"path": [
+								"ngati",
+								"services",
+								"register",
+								"customerDetails\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QueryAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9070/ngati/services",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9070",
+							"path": [
+								"ngati",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9070/ngati/services/balanceCheck",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9070",
+							"path": [
+								"ngati",
+								"services",
+								"balanceCheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KvQueryAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9070/ngati/kv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9070",
+							"path": [
+								"ngati",
+								"kv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KvQuery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9070/ngati/kv/service_port",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9070",
+							"path": [
+								"ngati",
+								"kv",
+								"service_port"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9070/ngati/services/nameCheck/metadata?service_ip=10.10.30.40&service_port=9045",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9070",
+							"path": [
+								"ngati",
+								"services",
+								"nameCheck",
+								"metadata"
+							],
+							"query": [
+								{
+									"key": "service_ip",
+									"value": "10.10.30.40"
+								},
+								{
+									"key": "service_port",
+									"value": "9045"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "KvSet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9070/ngati/kv?service_ip=10.10.30.40&service_port=9045",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9070",
+							"path": [
+								"ngati",
+								"kv"
+							],
+							"query": [
+								{
+									"key": "service_ip",
+									"value": "10.10.30.40"
+								},
+								{
+									"key": "service_port",
+									"value": "9045"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
