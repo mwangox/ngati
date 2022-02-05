@@ -14,7 +14,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9070/ngati/services/de-register/nameCheck",
+							"raw": "http://localhost:9070/ngati/services/de-register/userDetails01",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -24,7 +24,7 @@
 								"ngati",
 								"services",
 								"de-register",
-								"nameCheck"
+								"userDetails01"
 							]
 						}
 					},
@@ -37,7 +37,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"service_name\": \"customerDetails\",\r\n    \"service_ip\": \"localhost\",\r\n    \"service_port\": \"9070\",\r\n    \"service_dc\": \"Tukuyu03\",\r\n    \"health_check_path\": \"/health\",\r\n    \"http_scheme\": \"http\"\r\n}",
+							"raw": "{\r\n    \"service_name\": \"userDetails\",\r\n    \"service_ip\": \"localhost\",\r\n    \"service_port\": \"9070\",\r\n    \"service_dc\": \"Tukuyu03\",\r\n    \"health_check_path\": \"/health\",\r\n    \"http_scheme\": \"http\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -45,7 +45,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:9070/ngati/services/register/customerDetails\n",
+							"raw": "http://localhost:9070/ngati/services/register/userDetails",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -55,7 +55,7 @@
 								"ngati",
 								"services",
 								"register",
-								"customerDetails\n"
+								"userDetails"
 							]
 						}
 					},
@@ -87,7 +87,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9070/ngati/services/balanceCheck",
+							"raw": "http://localhost:9070/ngati/services/userDetails",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -96,7 +96,7 @@
 							"path": [
 								"ngati",
 								"services",
-								"balanceCheck"
+								"userDetails"
 							]
 						}
 					},
@@ -149,7 +149,7 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:9070/ngati/services/nameCheck/metadata?service_ip=10.10.30.40&service_port=9045",
+							"raw": "http://localhost:9070/ngati/services/userDetails/metadata?service_ip=10.10.30.40&service_port=9045",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -158,7 +158,7 @@
 							"path": [
 								"ngati",
 								"services",
-								"nameCheck",
+								"userDetails",
 								"metadata"
 							],
 							"query": [
